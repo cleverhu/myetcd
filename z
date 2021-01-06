@@ -1,0 +1,5 @@
+@echo off
+start "prodService1" go run service.go --name prodService --p 7777 &
+start "prodService2" go run service.go --name prodService --p 7778
+
+pause
